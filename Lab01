@@ -11,4 +11,8 @@ Set-ADUser $user.samaccountname -replace @{ProxyAddresses=$Proxyaddress}
 Set-ADuser $user.samaccountname -EmailAddress $user.UserPrincipalName
 }
 
- #
+# Før AAD Connect 
+#I admin powershell 
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted 
+
+Start-ADSyncSyncCycle -PolicyType Initial
