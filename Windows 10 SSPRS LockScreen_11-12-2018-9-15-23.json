@@ -1,0 +1,22 @@
+{
+    "@odata.type":  "#microsoft.graph.windows10CustomConfiguration",
+    "id":  "9cf25868-5796-45a6-bf15-f5d545e94bd7",
+    "lastModifiedDateTime":  "2018-12-11T00:10:48.7619174Z",
+    "roleScopeTagIds":  [
+
+                        ],
+    "supportsScopeTags":  true,
+    "createdDateTime":  "2018-12-11T00:10:48.7619174Z",
+    "description":  "Enable users to do SSPRS from Lock Screen",
+    "displayName":  "Windows 10 SSPRS LockScreen",
+    "version":  1,
+    "omaSettings":  [
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "SSPRS from Lock Screen",
+                            "description":  null,
+                            "omaUri":  "./Vendor/MSFT/Policy/Config/Authentication/AllowAadPasswordReset",
+                            "value":  1
+                        }
+                    ]
+}

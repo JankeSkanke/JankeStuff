@@ -1,0 +1,2 @@
+IntuneWinAppUtil.exe -c C:\Temp\Chrome -s C:\Temp\Chrome\GoogleChromeStandaloneEnterprise64.msi -o C:\Temp\output
+

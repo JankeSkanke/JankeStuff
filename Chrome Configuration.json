@@ -1,0 +1,29 @@
+{
+    "@odata.type":  "#microsoft.graph.windows10CustomConfiguration",
+    "id":  "39b43bba-e768-4a17-b291-8a7677a6aee8",
+    "lastModifiedDateTime":  "2018-12-11T08:12:55.1196654Z",
+    "roleScopeTagIds":  [
+
+                        ],
+    "supportsScopeTags":  true,
+    "createdDateTime":  "2018-12-11T00:10:05.6201254Z",
+    "description":  "",
+    "displayName":  "Chrome Configuration",
+    "version":  2,
+    "omaSettings":  [
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "Show Home Button",
+                            "description":  null,
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome/ShowHomeButton",
+                            "value":  "\u003cenabled/\u003e"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "ExtensionforceList",
+                            "description":  null,
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist",
+                            "value":  "\u003cenabled/\u003e\n\u003cdata id=\"ExtensionInstallForcelistDesc\"\nvalue=\"1\u0026#xF000;bkbeeeffjjeopflfhgeknacdieedcoml;https://clients2.google.com/service/update2/crx\u0026#xF000;2\u0026#xF000;ppnbnpeolgkicgegkbkbjmhlideopiji;https://clients2.google.com/service/update2/crx\"/\u003e"
+                        }
+                    ]
+}
