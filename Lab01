@@ -1,0 +1,15 @@
+#
+Set-ADForest -identity "corp.demodummies.com" -UPNSuffixes @{replace="xxyyzzaa.demodummies.com"}
+#
+Get-ADUser -Filter * -SearchBase "OU=Users,OU=DemoDummies,DC=corp,DC=demodummies,DC=com" -Properties SamAccountName | ForEach-Object { Set-ADUser $_ -UserPrincipalName ($_.SamAccountName + "@xxyyzzaa.demodummies.com" )}
+#
+$Users = Get-ADUser -Filter * -SearchBase
+"OU=Users,OU=DemoDummies,DC=corp,DC=demodummies,DC=com"
+foreach ($user in $Users)
+{
+$Proxyaddress = "SMTP:"+$user.userprincipalname
+Set-ADUser $user.samaccountname -replace @{ProxyAddresses=$Proxyaddress}
+Set-ADuser $user.samaccountname -EmailAddress $user.UserPrincipalName
+}
+
+#
