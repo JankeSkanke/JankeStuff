@@ -13,3 +13,4 @@ Get-MsolUser | Where-Object -Property UserPrincipalName -match "demodummies.com"
 Set-MsolDomain -Name $domain.name[0] -IsDefault
 Remove-MsolDomain -DomainName $domain.name[1] -force
 
+#
